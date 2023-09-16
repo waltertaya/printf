@@ -1,9 +1,9 @@
 #include "printfheader.h"
 
 /**
- * printstring - prints a string
- * @s: string to be printed
- * Return: number of characters printed
+* printstring - prints a string
+* @s: string to be printed
+* Return: number of characters printed
 */
 
 int printstring(char *s)
