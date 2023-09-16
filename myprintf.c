@@ -1,10 +1,10 @@
 #include "printfheader.h"
 
 /**
- * _printf - prints anything
- * @format: list of argument types passed to the function
+ * _printf - prints a string
+ * @format: string to be printed
  * Return: number of characters printed
-*/
+ */
 
 int _printf(const char *format, ...)
 {

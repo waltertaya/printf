@@ -3,8 +3,7 @@
 /**
  * printchar - prints a character
  * @t: character to be printed
- * Return: 1
- * Description: prints a character
+ * Return: number of characters printed
 */
 
 int printchar(char t)
