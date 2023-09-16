@@ -1,5 +1,11 @@
 #include "printfheader.h"
 
+/**
+ * _printf - prints anything
+ * @format: list of argument types passed to the function
+ * Return: number of characters printed
+*/
+
 int _printf(const char *format, ...)
 {
 unsigned h = 0,count = 0;
