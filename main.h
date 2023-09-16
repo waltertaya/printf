@@ -9,7 +9,7 @@
 // Function prototypes
 
 int printchar(char t);
-int myprintf(const char *format, ...);
+int _printf(const char *format, ...);
 int printstring(char *s);
 int printsint(int num);
 

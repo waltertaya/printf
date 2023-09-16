@@ -1,6 +1,6 @@
 #include "printfheader.h"
 
-int myprintf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 unsigned h = 0,count = 0;
 va_list args;
