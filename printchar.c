@@ -1,9 +1,9 @@
 #include "printfheader.h"
 
 /**
- * printchar - prints a character
- * @t: character to be printed
- * Return: number of characters printed
+* printchar - prints a character
+* @t: character to be printed
+* Return: number of characters printed
 */
 
 int printchar(char t)
