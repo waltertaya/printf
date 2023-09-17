@@ -2,7 +2,7 @@
 
 /**
  * unsignedhex - prints an unsigned int in hexadecimal form
- * number: The number to be printed, argument passed
+ * @number: The number to be printed, argument passed
  * Return: number of digits printed
  */
 
@@ -19,7 +19,7 @@ number /= 16;
 count++;
 }
 count++;
-arr = malloc(count * sizeof(int));
+arr = malloc(count *sizeof(int));
 
 for (i = 0; i < count; i++)
 {
