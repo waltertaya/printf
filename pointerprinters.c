@@ -28,5 +28,4 @@ put_char('0');
 put_char('x');
 d = unsignedlonghex(c);
 return (d + 2);
-
 }
