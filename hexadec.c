@@ -20,7 +20,7 @@ number /= 16;
 count++;
 }
 count++;
-arr = malloc(count * sizeof(int));
+arr = malloc(count *sizeof(int));
 for (i = 0; i < count; i++)
 {
 arr[i] = m % 16;
