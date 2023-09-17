@@ -1,37 +1,50 @@
-#include "printfheader.h"
+#include "main.h"
 
 /**
-* _printf - prints a string
-* @format: string to be printed
-* Return: number of characters printed
-*/
+ * _printf - is a function that selects the correct function to print.
+ * @format: identifier to look for. Ex: %s, %c, %i, etc.
+ * Return: number of characters printed.
+ */
 
 int _printf(const char *format, ...)
 {
-unsigned h = 0,count = 0;
+int i = 0, j = 0, count = 0;
 va_list args;
+format_t p[] = {
+{"%s", printstring}, {"%c", printchar},
+{"%%", print37}, {"%i", printint},
+{"%d", printint}, {"%b", printbinary},
+{"%u", printuint}, {"%o", printoctal},
+{"%x", printhex}, {"%X", printhexc},
+{"%r", printallstring}, {"%R", printrot13},
+
+};
+
+va_list args;
+
+int idx, j ,length = 0;
+
 va_start(args, format);
-while(format[h] != '\0')
+if(format == NULL || (format[0] == '%' && format[1] == '\0'))
+return (-1);
+
+Here:
+for(idx = 0; format[idx] != '\0'; i++)
 {
-if(format[h] != '%'){
-printchar(format[h]);
+j = 13;
+while (j >= 0)
+{
+if (p[j].identifier[0] == format[idx] && p[j].identifier[1] == format[idx + 1])
+{
+length += p[j].func(args);
+idx +=2;
+goto Here;
 }
-else if(format[h + 1] == 'c'){
-printchar(va_arg(args, int));
-h++;
+j--;
 }
-else if(format[h + 1] == 's'){
-int r_value = printstring(va_arg(args, char *));
-h++;
-count += (r_value - 1);
+_putchar(format[idx]);
+length++;
 }
-else if(format[h + 1] == '%'){
-printchar('%');
-h++;
-}
-count++;
-h++;
-}
-va_end(args); // Clean up the va_list
-return count;
+va_end(args);
+return (length);
 }
