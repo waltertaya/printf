@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_hex - prints a hexadecimal
+ * Hex - prints a hexadecimal
  * @args: The hexadecimal to print, argument passed
  * Return: number of digits printed
  */
 
-int print_hex(va_list args)
+int Hex(va_list args)
 {
 unsigned int number = va_arg(args, unsigned int);
 int count = 0;
