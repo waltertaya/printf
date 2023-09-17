@@ -7,13 +7,6 @@
 #include <stdarg.h>
 
 // Function prototypes
-
-void printchar(char t);
 int _printf(const char *format, ...);
-int printstring(char *s);
-int printsint(int num);
 
-
-
-
-#endif // _PRINTFHEADER_H
+#endif // MAIN_H
