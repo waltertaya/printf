@@ -10,7 +10,7 @@ int printinteger(va_list args)
 {
 int m = va_arg(args, int);
 int i = 1;
-int number,lass = m % 10,d, exp = 1;
+int number, lass = m % 10, d, exp = 1;
 
 m /= 10;
 number = m;
@@ -45,7 +45,7 @@ return (i);
 }
 
 /**
- * print_decimal - prints decimal
+ * printdecimal - prints decimal
  * @args: The decimal to print, argument passed
  * Return: number of digits printed
  */
@@ -54,7 +54,7 @@ int printdecimal(va_list args)
 {
 int m = va_arg(args, int);
 int i = 1;
-int number,lass = m % 10,d, exp = 1;
+int number, lass = m % 10, d, exp = 1;
 
 m /= 10;
 number = m;
