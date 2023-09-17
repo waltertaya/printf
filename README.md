@@ -8,7 +8,7 @@ The `myprintf` function is a custom printf function created by Walter and Edwin.
 
 ### Syntax
 
-The `myprintf` function takes the same arguments as the standard printf function:
+The `_printf` function takes the same arguments as the standard printf function:
 
 * A format string, which specifies how the output should be formatted.
 * A variable number of arguments, which are the values to be printed.
@@ -16,7 +16,7 @@ The `myprintf` function takes the same arguments as the standard printf function
 However, the `myprintf` function also supports custom format specifiers. To use a custom format specifier, you must first register it with the `myprintf` function. You can do this using the following function:
 
 ```c
-int myprintf_register_format_specifier(const char *name, myprintf_format_specifier_handler_t handler);
+int _printf_register_format_specifier(const char *name, _printf_format_specifier_handler_t handler);
 
 
 The `name` parameter is the name of the format specifier. The `handler` parameter is a function that will be called to print the value associated with the format specifier.
@@ -37,7 +37,7 @@ c
 #include <stdio.h>
 
 int main() {
-  myprintf("Hello, world! %d\n", 10);
+  _printf("Hello, world! %d\n", 10);
   return 0;
 }
 
