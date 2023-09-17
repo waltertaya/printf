@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * printallstring - handles special characters in a string and print exclusuives string
+ * printallstring - handles special characters in a string
+ * and prints an  exclusuives string
  * @args: type va_list
  * Return: number of characters printed
  */
@@ -13,7 +14,7 @@ int i = 0, j = 0, count = 0;
 char *s;
 s = va_arg(args, char *);
 
-if(s == NULL)
+if (s == NULL)
 s = "(null)";
 while (s[i] != '\0')
 {

@@ -5,7 +5,6 @@
  * @s: type char *
  * Return: length of string
  */
-
 int strlength(char *s)
 {
 int i = 0;
@@ -20,7 +19,6 @@ return (i);
  * @s: type const char *
  * Return: length of string
  */
-
 int strlengthconst(const char *s)
 {
 int i = 0;

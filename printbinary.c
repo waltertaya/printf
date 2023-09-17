@@ -17,11 +17,11 @@ unsigned int n;
 for (i = 0; i < 32; i++)
 {
 n = ((c << (31 - i)) & num);
-if(n >> (31 - i))
+if (n >> (31 - i))
 {
 flag = 1;
 }
-if(flag)
+if (flag)
 {
 d = n >> (31 - i);
 put_char(d + '0');

@@ -18,14 +18,14 @@ format_t p[] = {
 
 va_list args;
 
-int idx, length = 0,j;
+int idx, length = 0, j;
 
 va_start(args, format);
-if(format == NULL || (format[0] == '%' && format[1] == '\0'))
+if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 return (-1);
 
 Here:
-for(idx = 0; format[idx] != '\0'; idx++)
+for (idx = 0; format[idx] != '\0'; idx++)
 {
 j = 13;
 while (j >= 0)
@@ -33,7 +33,7 @@ while (j >= 0)
 if (p[j].identifier[0] == format[idx] && p[j].identifier[1] == format[idx + 1])
 {
 length += p[j].func(args);
-idx +=2;
+idx += 2;
 goto Here;
 }
 j--;
