@@ -10,7 +10,7 @@ int unsignedint(va_list args)
 {
 unsigned int m = va_arg(args, unsigned int);
 int i = 1;
-unsigned int number,lass = m % 10,d, exp = 1;
+int number,lass = m % 10,d, exp = 1;
 
 m /= 10;
 number = m;
