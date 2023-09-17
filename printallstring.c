@@ -28,7 +28,7 @@ if (j < 16)
 put_char('0');
 count++;
 }
-count += print_hex(j);
+/**count += print_hex(j);*/
 }
 else
 {

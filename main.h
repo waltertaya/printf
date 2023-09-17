@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-// Includes standard library headers
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,12 +16,12 @@
 
 typedef struct format
 {
-char *identifier;   // identifier - s, c, i, d, u, o, x, X, p, r, R   = id
-int (*func)();   // function pointer  - f
+char *identifier; 
+int (*func)();
 } format_t;
 
-// Function prototypes
-put_char(char c);
+
+int put_char(char c);
 int printchar(va_list args);
 int printstring(va_list args);
 int print37(void);
@@ -33,4 +32,4 @@ int strlength(char *s);
 int strlengthconst(const char *s);
 int _printf(const char *format, ...);
 
-#endif // MAIN_H
+#endif

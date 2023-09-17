@@ -8,28 +8,24 @@
 
 int _printf(const char *format, ...)
 {
-int i = 0, j = 0, count = 0;
-va_list args;
 format_t p[] = {
 {"%s", printstring}, {"%c", printchar},
-{"%%", print37}, {"%i", printint},
-{"%d", printint}, {"%b", printbinary},
-{"%u", printuint}, {"%o", printoctal},
-{"%x", printhex}, {"%X", printhexc},
-{"%r", printallstring}, {"%R", printrot13},
+{"%%", print37},
+{"%b", printbinary},
+{"%r", printallstring}
 
 };
 
 va_list args;
 
-int idx, j ,length = 0;
+int idx, length = 0,j;
 
 va_start(args, format);
 if(format == NULL || (format[0] == '%' && format[1] == '\0'))
 return (-1);
 
 Here:
-for(idx = 0; format[idx] != '\0'; i++)
+for(idx = 0; format[idx] != '\0'; idx++)
 {
 j = 13;
 while (j >= 0)
@@ -42,7 +38,7 @@ goto Here;
 }
 j--;
 }
-_putchar(format[idx]);
+put_char(format[idx]);
 length++;
 }
 va_end(args);
