@@ -6,7 +6,7 @@
 * Return: number of characters printed
 */
 
-int printchar(char t)
+void printchar(char t)
 {
 write(1, &t, 1);
 }

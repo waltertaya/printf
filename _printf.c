@@ -32,5 +32,6 @@ h++;
 count++;
 h++;
 }
+va_end(args); // Clean up the va_list
 return count;
 }

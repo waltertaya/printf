@@ -8,7 +8,7 @@
 
 // Function prototypes
 
-int printchar(char t);
+void printchar(char t);
 int _printf(const char *format, ...);
 int printstring(char *s);
 int printsint(int num);
