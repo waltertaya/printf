@@ -15,7 +15,7 @@ char rot[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 int count = 0;
 int f = 0;
 
-if(s == NULL)
+if (s == NULL)
 {
 s = "(null)";
 }
