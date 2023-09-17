@@ -22,6 +22,6 @@ j++;
 for (i = j - 1; i >= 0; i--)
 {
 put_char(s[i]);
-}   
+}
 return (j);
 }
