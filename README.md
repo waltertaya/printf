@@ -1,6 +1,6 @@
 ## myprintf function
 
-The `myprintf` function is a custom printf function created by Walter and Edwin. It is similar to the standard printf function, but it has some additional features, such as:
+The `_printf` function is a custom printf function created by Walter and Edwin. It is similar to the standard printf function, but it has some additional features, such as:
 
 * Support for custom format specifiers.
 * Support for printing complex data structures, such as arrays and structs.
