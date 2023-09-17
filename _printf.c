@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 format_t p[] = {
 {"%s", printstring}, {"%c", printchar},
 {"%%", print37},
-{"%i", printinteger}, {"%d", printdecimal},{"%r", reversestr},
+{"%i", printinteger}, {"%d", printdecimal}, {"%r", reversestr},
 {"%R", rot13}, {"%u", unsignedint}, {"%o", printoctal},
 {"%x", Hex}, {"%x", hexadec}, {"%p", pointerprinters},
 {"%s", printallstring}, {"%b", printbinary}
