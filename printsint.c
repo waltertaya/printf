@@ -1,4 +1,4 @@
-#include "printfheader.h"
+#include "main.h"
 
 int printsint(int num)
 {
