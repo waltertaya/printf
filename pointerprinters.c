@@ -13,7 +13,8 @@ int i;
 char *s = "(nil)";
 int d;
 long int c;
-void *ptr = va_arg(args, void *);
+void *ptr;
+ptr = va_arg(args, void *);
 
 if (ptr == NULL)
 {

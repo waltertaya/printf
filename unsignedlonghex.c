@@ -19,7 +19,7 @@ number /= 16;
 count++;
 }
 count++;
-arr = malloc(count *sizeof(long int));
+arr = malloc(count * sizeof(long int));
 
 for (i = 0; i < count; i++)
 {

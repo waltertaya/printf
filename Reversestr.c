@@ -9,7 +9,7 @@
 int reversestr(va_list args)
 {
 int i, j = 0;
-char *s = va_arg(args, char *);
+char *s = va_arg(args, char*);
 
 if (s == NULL)
 {

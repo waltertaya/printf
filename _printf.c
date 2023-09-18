@@ -13,8 +13,8 @@ format_t p[] = {
 {"%%", print37},
 {"%i", printinteger}, {"%d", printdecimal}, {"%r", reversestr},
 {"%R", rot13}, {"%u", unsignedint}, {"%o", printoctal},
-{"%x", Hex}, {"%x", hexadec}, {"%p", pointerprinters},
-{"%s", printallstring}, {"%b", printbinary}
+{"%x", Hex}, {"%X", hexadec}, {"%p", pointerprinters},
+{"%S", printallstring}, {"%b", printbinary}
 
 };
 

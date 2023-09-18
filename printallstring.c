@@ -2,7 +2,7 @@
 
 /**
  * printallstring - handles special characters in a string
- * and prints an  exclusuives string
+ * and prints an  exclusuive string
  * @args: type va_list
  * Return: number of characters printed
  */
@@ -15,7 +15,9 @@ char *s;
 s = va_arg(args, char *);
 
 if (s == NULL)
+{
 s = "(null)";
+}
 while (s[i] != '\0')
 {
 if (s[i] < 32 || s[i] >= 127)
@@ -29,11 +31,11 @@ if (j < 16)
 put_char('0');
 count++;
 }
-/**count += print_hex(j);*/
+count += unsignedhex(j);
 }
 else
 {
-put_char(j);
+put_char(s[i]);
 count++;
 }
 i++;

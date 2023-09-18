@@ -7,30 +7,30 @@
  */
 int printstring(va_list args)
 {
-	char *s;
-	int i = 0, count = 0;
+char *s;
+int i = 0, count = 0;
 
-	s = va_arg(args, char *);
+s = va_arg(args, char *);
 
-	if (s == NULL)
-	{
-		s = "(null)";
-		count = strlength(s);
-		while (i < count)
-		{
-			put_char(s[i]);
-			i++;
-		}
-		return (count);
-	}
-	else
-	{
-		count = strlength(s);
-		while (i < count)
-		{
-			put_char(s[i]);
-			i++;
-		}
-		return (count);
-	}
+if (s == NULL)
+{
+s = "(null)";
+count = strlength(s);
+while (i < count)
+{
+put_char(s[i]);
+i++;
+}
+return (count);
+}
+else
+{
+count = strlength(s);
+while (i < count)
+{
+put_char(s[i]);
+i++;
+}
+return (count);
+}
 }

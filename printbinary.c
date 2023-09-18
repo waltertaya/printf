@@ -24,7 +24,7 @@ flag = 1;
 if (flag)
 {
 d = n >> (31 - i);
-put_char(d + '0');
+put_char(d + 48);
 count++;
 }
 }

@@ -35,7 +35,7 @@ while (exp > 0)
 {
 d = number / exp;
 put_char(d + '0');
-number -= d *exp;
+number -= (d * exp);
 exp /= 10;
 i++;
 }

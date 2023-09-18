@@ -33,7 +33,7 @@ int rot13(va_list args);
 int printinteger(va_list args);
 int printdecimal(va_list args);
 int strlength(char *s);
-int strcopy(char *dest, char *src);
+int *_strcpy(char *dest, char *src);
 int strlengthconst(const char *s);
 int rev_str(char *s);
 int strlengthconst(const char *s);
